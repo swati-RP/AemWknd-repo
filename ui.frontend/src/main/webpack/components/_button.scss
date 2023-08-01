@@ -1,0 +1,97 @@
+
+
+
+.cmp-button 
+{
+    display: inline-block; 
+     font-size: 16px; 
+    cursor: pointer; 
+     float: left;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+   
+}
+
+.cmp-button:hover{
+     
+}
+.cmp-button__text
+ {
+   text-decoration: none;
+   color: white;
+    
+}
+.cmp-button__icon 
+{
+       
+
+}
+
+
+
+  .cmp-button-color-aqua{
+    .cmp-button{
+      background-color: aqua;
+      &_text{
+        color: white;
+      }
+    
+  }
+}
+
+.cmp-button-color-yellow{
+  .cmp-button{
+    background-color: yellowgreen;
+    &_text{
+      color: black;
+    }
+  
+}
+}
+
+
+.cmp-button-color-blue{
+  color: blue;
+
+}
+.cmp-button-padding-top{
+  padding-top: 20px;
+}
+
+.cmp-page-color-blue{
+  background-color: blue;
+}
+.cmp-page-color-black{
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .cmp-button-size-large{
+//   size: 60px;
+// }
+// .cmp-button-padding-top{
+//   padding-top: 20px;
+// }
+// .cmp-button-primary{
+
+// }
+// .cmp-button-secondary{
+
+// }
+//.cmp-button__icon--myIcon {}

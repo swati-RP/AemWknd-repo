@@ -1,0 +1,67 @@
+.container{
+    background-color: $color-background;
+}
+.cmp-publicationslist{
+    
+    margin: 40px;
+
+    hr{
+        margin-left: 16px;
+        border-width: 1px;
+        
+    }
+
+    &__title{
+        margin-left: 16px
+        
+
+    }
+    &__item{
+        ol{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 0px;
+        }
+
+        &__detail{
+
+            a{
+                text-decoration: none;
+            }
+
+            margin: 20px;
+
+            &-typeanddate{
+                font-size: $font-size-type-author;
+                font-weight: bold;
+                margin-bottom: 4px;
+                opacity: 0.6;
+            }
+            
+            &-title{
+                color: $color-text-black;
+                margin-top: 2px;
+                margin-bottom: 2px;
+
+                &--internallink{
+                   color: $color-text-red;
+                }
+                &--externallink{
+                    color: $color-text-red;
+                }
+
+            }
+            &-authorname{
+                font-size: $font-size-type-author;
+                font-weight: bold;
+                margin-top: 4px;
+                opacity: 0.6;
+            }
+        }
+    }
+   
+}
+
+
+
+

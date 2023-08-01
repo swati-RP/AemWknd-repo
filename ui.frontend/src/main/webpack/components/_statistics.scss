@@ -1,0 +1,87 @@
+.cmp-statistics{
+    color: $color-text-white;
+    position: relative;
+    height: 600px;
+    img{
+        display: none;
+    }
+    @include min-screen(lg){
+        height: 800px;
+
+        img{
+            height: 825px;
+            width: 1906px;
+            display: block;
+        }
+    }
+    &__content{
+        background-color: $color-text-black;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1098px;
+        height: 100%;
+        padding: 17px 27px ;
+
+        &__inactive{
+            opacity: .4;
+        }
+        
+        @include min-screen(lg){
+            position: absolute;
+            top: 10px;
+            background-color: transparent;
+            padding: 130px 404px;
+            height: 70%;
+        }      
+       
+
+    }
+    &__value{
+        display: inline-block;
+        font-size: 125px;
+
+        @include min-screen(lg){
+            height: 164px;
+        }        
+    }
+    &__details{
+        font-weight: bolder;
+        font-size: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include min-screen(lg){
+            font-size: 46px;
+            padding-right: 40px;
+            width: 400px;
+        }
+        
+        span{
+            display: block;
+            font-size: 20px;
+            line-height: 21px;
+            padding-right: 30px;
+
+                
+            @include min-screen(lg){
+                font-size: 28px;
+                line-height: 30px;
+            
+            }
+        }
+    }
+
+    ul li {
+        display: flex;
+        gap: 11px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        transition: opacity .3s ease-in-out;
+        
+    }
+}
+.active{
+    opacity: 1.1;
+    color:  $color-text-white;
+}

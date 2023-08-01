@@ -1,0 +1,55 @@
+<sly  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+
+
+<div class="cmp-statistics">
+      <img class="cmp-statistic__bgimage" src="https://images.unsplash.com/photo-1680153527310-1a70b47af6e9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=452&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MDUwNTg2OA&ixlib=rb-4.0.3&q=80&w=576" alt="">
+      <!-- <ul class="cmp-statistics__content">
+            <li class="cmp-statistics__content__inactive">
+               <span class="cmp-statistics__value">XX</span>
+               <div class="cmp-statistics__details">
+                  <span>of alliances with large digital partners</span>
+               </div>
+            </li>
+            <li class="cmp-statistics__content__inactive">
+               <span class="cmp-statistics__value">500</span>
+               <div class="cmp-statistics__details"> +
+                  <span>team members globally</span>
+               </div>
+            </li>
+            <li class="cmp-statistics__content__inactive">
+               <span class="cmp-statistics__value">XX</span>
+               <div class="cmp-statistics__details"> %
+                  <span> year over year growth</span>
+               </div>
+            </li>
+      </ul> -->
+
+      <ul class="cmp-statistics__content" >
+         <li class="cmp-statistics__content__inactive"  data-sly-repeat.contentDetail="${properties.contentDetail}">
+            <span class="cmp-statistics__value"> Text : ${contentDetail.value}</span>
+            <div class="cmp-statistics__details">
+               <span>${contentDetail.text}</span>
+            </div>
+         </li>
+         <li class="cmp-statistics__content__inactive">
+            <span class="cmp-statistics__value">500</span>
+            <div class="cmp-statistics__details"> +
+               <span>team members globally</span>
+            </div>
+         </li>
+         <li class="cmp-statistics__content__inactive">
+            <span class="cmp-statistics__value">XX</span>
+            <div class="cmp-statistics__details"> %
+               <span> year over year growth</span>
+            </div>
+         </li>
+   </ul>
+
+
+      
+ </div>
+</sly>
+<sly>  </sly>
+
+   
+   

@@ -1,0 +1,27 @@
+<div data-sly-use.books="com.adobe.aem.guides.wknd.core.models.AuthorBooks" >
+============Author Detail=============
+    <div data-sly-list.author="${books.authorsCollections}">
+
+        <h3>Author Name : <b>${author.authorName}</b></h3>
+
+        ==============Book Detail===============
+        <div data-sly-list.bookdetail="${author.bookDetails}">
+            <p>Book Name : ${bookdetail.bookName}</p>
+            <p>Subject Name : ${bookdetail.subjectName}</p>
+            <p>published at : ${bookdetail.published}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
