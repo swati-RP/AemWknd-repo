@@ -1,56 +1,57 @@
- <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-        jcr:primaryType="nt:unstructured"
-        jcr:title="Properties"
-        sling:resourceType="cq/gui/components/authoring/dialog">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+ xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties to add"
+    sling:resourceType="cq/gui/components/authoring/dialog">
         <content
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
             <items jcr:primaryType="nt:unstructured">
-                <image
+              <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured"> 
+               <image2
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                    fieldLabel="image"
-                    name="./image" 
-                    required="{Boolean}true" />
-                        <feature
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                            composite="{Boolean}true"
-                            fieldLabel="Feature"
-                            required="{Boolean}false">
-                            <field
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/container"
-                                name="./feature">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <image
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                        fieldLabel="image"
-                                        name="./image"/>
-                                     <image
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                        fieldLabel="image"
-                                        name="./image"/>
-                                     <text
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldLabel="text"
-                                        name="./text" />  
-                                </items>
-                            </field>    
-                        </feature>
+                    fieldLabel="image2"
+                    name="./image2"/>
+                <slide
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        fieldDescription="Click '+' to add a new link"
+                        fieldLabel="Slide"
+                        jcr:primaryType="nt:unstructured"
+                        composite="{Boolean}true">
+                        <field sling:resourceType="granite/ui/components/coral/foundation/container"
+                                jcr:primaryType="nt:unstructured" name="./slide">
+                            <items jcr:primaryType="nt:unstructured">
+                                <image
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Image"
+                                    jcr:primaryType="nt:unstructured"
+                                    rootPath="/content/"
+                                    name="./image" />
+                                <imageText
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Text"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./imageText" />
+                            </items>
+                        </field>
+                    </slide>
+                <text1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldLabel="text1"
+                    name="./text1" />     
                  <subtitle
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                     fieldLabel="Subtitle"
                     name="./subtitle" />  
-                 <text
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                    fieldLabel="text"
-                    name="./text" />   
+                     </items>
+                     </column> 
             </items>
+
         </content>
     </jcr:root>

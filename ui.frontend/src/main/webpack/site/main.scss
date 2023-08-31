@@ -3,6 +3,15 @@
 @import "base";
 @import "../components/**/*.scss";
 
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/autoplay";
+@import "swiper/scss/pagination";
+
+
+@import "base";
+@import "../components/**/*.scss";
+@import "./styles/*.scss";
 
 
 // @import './../../../../node_modules/bootstrap/scss/functions.scss';

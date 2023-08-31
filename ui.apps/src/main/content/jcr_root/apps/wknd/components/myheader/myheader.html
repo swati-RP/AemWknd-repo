@@ -1,0 +1,61 @@
+<sly
+  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Myheader"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+  >
+
+  <sly data-sly-test="${!model.empty}">
+
+  <div class="cmp-myheader">
+ 
+  <div class="cmp-myheader-content-1">
+
+  <div class="cmp-myheader-image-1">
+  <img src="${model.image2}" alt="Image">
+
+</div>
+
+
+  </div>
+  
+  <div class="cmp-slidebanner__container">
+
+  <section class="cmp-slidebanner__container__left"></section>
+
+  <!-- slider  -->
+
+  <section class="cmp-slidebanner__container__slider">
+
+      <div class="swiper">
+          <div class="swiper-wrapper" data-sly-list.item="${model.slideData}" >
+              <div class="swiper-slide" >
+                  <img src="${item.image}" alt="images" />
+                  <p class="slide-text"> ${item.imageText} </p>
+              </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-pagination swiper-pagination-clickable"></div>
+      </div>
+
+  </section>
+
+  </div>
+</div>
+
+   <div class="cmp-myheader-content-3">
+
+
+
+  </div>
+
+  </div>
+  
+
+
+  </sly>
+
+  </sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = model.empty}"></sly>
+

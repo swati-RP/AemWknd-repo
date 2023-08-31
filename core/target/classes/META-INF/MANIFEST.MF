@@ -29,9 +29,9 @@ Import-Package: javax.annotation;version="0.0.0",com.adobe.aem.guides.
  ng.models.annotations;version="[1.5,2)",org.apache.sling.models.annot
  ations.injectorspecific;version="[1.1,2)",org.apache.sling.models.ann
  otations.via;version="[1.0,2)",org.slf4j;version="[1.7,2)"
-Private-Package: com.adobe.aem.guides.wknd.core.models.dto.authorbooks
- ,com.adobe.aem.guides.wknd.core.models.helper,com.adobe.aem.guides.wk
- nd.core.models.impl
+Private-Package: com.adobe.aem.guides.wknd.core.models.dto,com.adobe.a
+ em.guides.wknd.core.models.dto.authorbooks,com.adobe.aem.guides.wknd.
+ core.models.helper,com.adobe.aem.guides.wknd.core.models.impl
 Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
  unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
  ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
@@ -56,9 +56,12 @@ Sling-Model-Classes: com.adobe.aem.guides.wknd.core.models.HelloWorldM
  be.aem.guides.wknd.core.models.impl.IdCardImpl,com.adobe.aem.guides.w
  knd.core.models.impl.MultiComponentImpl,com.adobe.aem.guides.wknd.cor
  e.models.impl.MultitabImpl,com.adobe.aem.guides.wknd.core.models.impl
- .Publication1Impl,com.adobe.aem.guides.wknd.core.models.impl.Publicat
- ion2Impl,com.adobe.aem.guides.wknd.core.models.impl.PublicationImpl,c
- om.adobe.aem.guides.wknd.core.models.impl.StudentCardImpl,com.adobe.a
- em.guides.wknd.core.models.impl.TextImageImpl,com.adobe.aem.guides.wk
- nd.core.models.impl.VerticalSliderImpl
+ .MyheaderImpl,com.adobe.aem.guides.wknd.core.models.impl.MysliderImpl
+ ,com.adobe.aem.guides.wknd.core.models.impl.Publication1Impl,com.adob
+ e.aem.guides.wknd.core.models.impl.Publication2Impl,com.adobe.aem.gui
+ des.wknd.core.models.impl.PublicationImpl,com.adobe.aem.guides.wknd.c
+ ore.models.impl.SlideBannerImpl,com.adobe.aem.guides.wknd.core.models
+ .impl.StudentCardImpl,com.adobe.aem.guides.wknd.core.models.impl.Text
+ ImageImpl,com.adobe.aem.guides.wknd.core.models.impl.VerticalSliderIm
+ pl
 
