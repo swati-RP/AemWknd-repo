@@ -27,9 +27,11 @@ org\apache\sling\scripting\sightly\apps\wknd\components\note\note__002e__html.cl
 org\apache\sling\scripting\sightly\apps\wknd\components\alert\alert__002d__notification__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\cards\cards__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\hero__002d__carousel2\hero__002d__carousel2__002e__html.class
+org\apache\sling\scripting\sightly\apps\wknd\components\SlideBanner\SlideBanner__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\publication1\publication1__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\alert\alert__002d__danger__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\helloworld\helloworld__002e__html.class
+org\apache\sling\scripting\sightly\apps\wknd\components\myslider\myslider__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\banner\banner__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\publication2\publication2__002e__html.class
 org\apache\sling\scripting\sightly\apps\wknd\components\authorbooks\authorbooks__002e__html.class
