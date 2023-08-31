@@ -1,0 +1,198 @@
+.cmp-myheader {
+    display: flex;
+    width: 100%;
+    //background-color: darkslateblue;
+}
+
+.cmp-myheader-content-1 {
+    width: 60%;
+    display: flex;
+    height: 100%;
+}
+
+.cmp-myheader-image-1 {
+    //display: flex;
+    width: 100%;
+    height: 100%;
+
+    .img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.mySlides {
+    display: none;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+.cmp-myheader-content-2 {
+  
+    background-image: url("https://www.newsnetnow.com/wp-content/uploads/2020/03/MANALI.jpg");
+    //opacity: 0.5;
+     
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    gap: 24px;
+    padding-left: 6.5rem;
+    padding-right: 6rem;
+    
+}
+
+.cmp-myheader-image-2 {
+    width: 116%;
+    height: 12rem;
+    //padding: 6px;
+    border: 2px solid black;
+    display: flex;
+    padding-bottom: 0.5rem;
+    padding-right: 50px;
+    padding-top: 1.5rem;
+    padding-left: 2px;
+
+
+}
+
+.cmp-myheader-image2 {
+    height: 174px;
+    width: 491px;
+
+    padding-left: 1.5rem;
+    padding-right: 4.5rem;
+
+}
+
+.cmp-myheader-image-3 {
+    width: 116%;
+    height: 14rem;
+    padding-left: 7rem;
+    padding: 6px;
+    border: 2px solid black;
+    display: flex;
+    padding-right: 2.5rem;
+
+
+   
+}
+
+.cmp-myheader-image3 {
+    height: 211px;
+    width: 491px;
+
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+img:hover {
+        opacity: 1.0;
+      }
+}
+
+.cmp-myheader__text1 {
+    width: 60%;
+    color: #5d5c5c;
+    ;
+    padding: 0.5rem;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 35px;
+    margin-top: 1rem;
+
+}
+
+.cmp-myheader__subtitle {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    margin-bottom: auto;
+    color: white;
+
+}
+
+.cmp-myheader-content-3 {
+    position: relative;
+}
+
+.line1 {}
+
+
+.line1::after {
+    content: "";
+    position: absolute;
+    left: 82rem;
+    bottom: 14rem;
+    width: 25%;
+    border-bottom: 3px solid black;
+}
+
+.cmp-myheader__text2 {}
